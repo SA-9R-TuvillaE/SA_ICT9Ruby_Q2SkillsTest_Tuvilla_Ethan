@@ -1,0 +1,244 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OBMC Student Enrollment Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    
+    body {
+      background-position: center;
+      background-image: url(https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/053bbc8c-f68a-4a6f-ac1e-73adfc595e01/O.B.+Montessori+Center+Grade+School+Primary) 
+    }
+    
+     {
+  margin: 0;  
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 8px 24px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+    max-height: 24px;
+    width: 24px
+}
+
+.nav-left a {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-left a:hover {
+  color: rgb(255, 94, 94);
+}
+
+.nav-right {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-right input {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+.nav-right button {
+  padding: 6px 14px;
+  background-color: #0b5ed7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nav-right button:hover {
+  background-color: #00FF00;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7 ); 
+  backdrop-filter: blur(4px);
+  border: none;
+}
+
+footer {
+      background: (1.0);
+      color: black;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-white bg-white">
+  <div class="nav-left">
+    <img src="https://files.orangeapps.ph/disk001/School_Files/1/school-65/school_profile/1724046681-141.png" style="width: 50px;">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Jobs</a>
+    <a href="#">Enrollment</a>
+    <a href="#">Programs</a>
+    <a href="#">Contact Us</a>
+  </div>
+
+  <div class="nav-right">
+    <input type="text" placeholder="Type here..." style="border: 2px solid #ccc; border-radius: 2px; padding: 6px;">
+    <button>Enter</button>
+  </div>
+</nav>
+<br>
+  <div class="page-wrapper">
+  <div class="container">
+  <div class="text-center text-white mb-5">
+      <img src="https://files.orangeapps.ph/disk001/School_Files/1/school-65/school_profile/1724046681-141.png"
+           width="60" class="mb-2">
+      <h2>OBMC Student Enrollment Form</h2>
+      <p class="small">Fill out the form below to enroll for the upcoming school year.</p>
+    </div>
+  <div class="card glass-card shadow mx-auto col-lg-10">
+    <div class="card-body"
+    <div class="row justify-content-center">
+            <h3 class="text-center mb-4">Student Information</h3>
+            <form>
+             <div class="row g-3">
+              <div class="col-md-4">
+                <label for="fname" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="name" placeholder="First Name" required>
+            </div>
+            <div class="col-md-4">
+                <label for="mname" class="form-label">Middle Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Middle Name" required>
+            </div>
+              <div class="col-md-4">
+                <label for="lname" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Last Name" required>
+              </div>
+              <div class="row g-3 mt-1">
+                <div class="col-md-4">
+                <label for="bd" class="form-label">Birth Date</label>
+                <input type="date" class="form-control" id="name" placeholder="Birth Date" required>
+              </div>
+              <div class="col-md-4">
+                <label for="gender" class="form-label">Gender</label>
+                <select name="gender" class="form-control">
+                  <option value="" disabled selected hidden> Select gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                  <option value="pnts">Prefer not to say</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label for="grade" class="form-label">Grade Level</label>
+                <select name="grade" class="form-control">
+                  <option value="" disabled selected hidden> Select grade level</option>
+                  <option value="" disabled>--Casa/Kindergarten--</option>
+                  <option value="Casa">Casa (K1)</option>
+                  <option value="ACasa">Advanced Casa (K2)</option>
+                  <option value="" disabled>--Primary--</option>
+                  <option value="1">Grade 1</option>
+                  <option value="2">Grade 2</option>
+                  <option value="3">Grade 3</option>
+                  <option value="" disabled>--Intermediate--</option>
+                  <option value="4">Grade 4</option>
+                  <option value="5">Grade 5</option>
+                  <option value="6">Grade 6</option>
+                  <option value="" disabled>--Junior High--</option>
+                  <option value="7">Grade 7</option>
+                  <option value="8">Grade 8</option>
+                  <option value="9">Grade 9</option>
+                  <option value="10">Grade 10</option>
+                  <option value="" disabled>--Senior High--</option>
+                  <option value="11">Grade 11</option>
+                  <option value="12">Grade 12</option>
+                </select>
+              </div>
+              <h3 class="text-center mb-4">Contact Information</h3>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email"  class="form-control" id="email" placeholder="email@address.com" required>
+              </div>  
+              <div class="mb-3">
+                <label for="tel" class="form-label">Contact Number</label>
+                <input type="tel"  class="form-control" id="tel" placeholder="+639123456789" required>
+              </div>  
+              <h3 class="text-center mb-4">Other Information</h3>
+            <div class="mb-3">
+              <label class="form-label fw-semibold"><h4>Mode of Learning</h4></label>
+
+              <div class="form-check">
+              <input type="radio" id="online" name="mol" value="online">
+              <label for="online">Online</label> 
+              </div>  
+
+              <div class="form-check">
+              <input type="radio" id="f2f" name="mol" value="f2f">
+              <label for="online">Face-to-face</label> 
+              </div> 
+
+              <div class="form-check">
+              <input type="radio" id="hyb" name="mol" value="hyb">
+              <label for="online">Hybrid</label> 
+              </div> 
+          <br>
+         
+              <h4>Health</h4>
+              <p>If your child has any medical conditions that may interfere with their studies, please mention them below.</p>
+              <div class="mb-3">
+                <label for="aller" class="form-label">Allergens</label>
+                <input type="text" class="form-control" id="name" placeholder="Specify any allergens that your child may have.">
+              </div>
+              <div class="mb-3">
+                <label for="cond" class="form-label">Conditions</label>
+                <input type="text" class="form-control" id="name" placeholder="Specify any conditions that your child may have.">
+              </div>
+              <div class="mb-3">
+                <label for="supp" class="form-label">Vitamins/Supplements</label>
+                <input type="text" class="form-control" id="name" placeholder="Specify any vitamins or supplements that your child may take.">
+              </div>
+              <h3 class="text-center mb-4">Confirmation</h3>
+              <input type="checkbox" id="check1" name="check" value="check1" required>
+              <label for="check1">I confirm that the information provided is true and complete.</label> 
+              <br>
+              <input type="checkbox" id="check2" name="check" value="chec21" required>
+              <label for="check1">I adhere to OB Montessori's Terms of Service and Privacy Policy.</label>
+              <br>
+              <br>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center py-1">
+  © 2025 Student Enrollment System | Ethan Tuvilla - 9-Ruby
+</footer>
+
+</body>
+
+</html>
